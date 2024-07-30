@@ -1,48 +1,66 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+# Ignore node_modules directory
+node_modules/
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+# Ignore build output directories
+dist/
+build/
 
-# Configuration
-wp-config.php
+# Ignore dependency directories
+vendor/
 
-# Example themes
-/wp-content/themes/twenty*/
+# Ignore configuration files
+*.env
+*.local
 
-# Example plugin
-/wp-content/plugins/hello.php
-
-# Uploads
-/wp-content/uploads/
-
-# Log files
+# Ignore log files
 *.log
 
-# htaccess
-/.htaccess
+# Ignore operating system files
+.DS_Store
+Thumbs.db
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
+# Ignore IDE files
+.vscode/
+.idea/
 
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+# Ignore npm and Yarn lock files
+package-lock.json
+yarn.lock
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+*.bak
+*.backup
+
+# Ignore SASS cache files
+.sass-cache/
+
+# Ignore specific theme-related files and directories
+*.css.map
+*.scssc
+
+# Ignore build tool artifacts
+*.min.js
+*.min.css
+
+# Ignore generated assets
+public/assets/
+assets/
+static/
+
+# Ignore specific files for CMS themes (e.g., WordPress)
+wp-content/themes/your-theme-name/assets/
+wp-content/themes/your-theme-name/node_modules/
+wp-content/themes/your-theme-name/dist/
+
+# Ignore specific files for static site generators (e.g., Jekyll, Hugo)
+_site/
+public/
+
+# Ignore specific files for general web development
+*.gz
+*.zip
+*.tar
+*.rar
